@@ -1,0 +1,14 @@
+{
+  "name": "momentum",
+  "version": "1.0.0",
+  "description": "MOMENTUM - A design exploration of motion, mass, and kinetic dynamics.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
