@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOMENTUM — Immersive Web Design & Creative Engineering Agency</title>
     <meta name="description" content="MOMENTUM is a high-fidelity web design agency crafting physics-driven interfaces, custom webGL applications, and sleek digital experiences.">
-    <!-- Google Fonts: Syne for headings, Space Grotesk for technical/body details -->
+    <!-- Google Fonts: Sora for headings, Inter for body, Space Grotesk for stats/tech overlays -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="dark-theme">
@@ -52,27 +52,55 @@
         <section id="hero" class="hero-section">
             <div class="hero-content">
                 <div class="hero-subtitle-wrapper">
-                    <span class="hero-tag">CREATIVE WEBDESIGN STUDIO</span>
+                    <span class="hero-tag">CREATIVE ENGINEERING × EXPERIENCE DESIGN</span>
                     <div class="divider-line"></div>
                 </div>
                 <h1 class="hero-title">
-                    <span class="word" data-word="DIGITAL">DIGITAL</span>
-                    <span class="multiplier">×</span>
-                    <span class="word" data-word="MOMENTUM">MOMENTUM</span>
+                    <span class="title-pre">ENGINEERING DIGITAL</span>
+                    <span class="title-main">MOMENTUM</span>
                 </h1>
                 <p class="hero-lead-text">
-                    We are a high-fidelity web design and creative engineering agency. We craft award-winning, interactive digital experiences that blend physics-based kinetics, Swiss minimalism, and absolute performance.
+                    We craft immersive, physics-driven web experiences for progressive brands. By blending Swiss typographic precision, kinetic interaction design, and high-performance frontend code, we turn static layouts into active digital assets.
                 </p>
                 <div class="hero-cta-group">
                     <a href="#works" class="btn btn-primary">
-                        View Selected Works
+                        Selected Works
                         <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </a>
                     <a href="#contact" class="btn btn-secondary">Let's Collaborate</a>
                 </div>
             </div>
+
+            <!-- Client Logos Marquee -->
+            <div class="logo-marquee-section">
+                <p class="marquee-title">COLLABORATIVE PARTNERS</p>
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <span class="marquee-logo">SYNAPSE AI</span>
+                        <span class="marquee-sep">/</span>
+                        <span class="marquee-logo">VOLTAIC CORP</span>
+                        <span class="marquee-sep">/</span>
+                        <span class="marquee-logo">ECLIPSE SOUND</span>
+                        <span class="marquee-sep">/</span>
+                        <span class="marquee-logo">AETHER LABS</span>
+                        <span class="marquee-sep">/</span>
+                        <span class="marquee-logo">VERTEX DESIGN</span>
+                        <span class="marquee-sep">/</span>
+                        <span class="marquee-logo">NEXA CLOUD</span>
+                        <span class="marquee-sep">/</span>
+                        <span class="marquee-logo">SYNAPSE AI</span>
+                        <span class="marquee-sep">/</span>
+                        <span class="marquee-logo">VOLTAIC CORP</span>
+                        <span class="marquee-sep">/</span>
+                        <span class="marquee-logo">ECLIPSE SOUND</span>
+                        <span class="marquee-sep">/</span>
+                        <span class="marquee-logo">AETHER LABS</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="scroll-indicator">
-                <span class="scroll-text">SCROLL TO DRIFT</span>
+                <span class="scroll-text">EXPLORE THE DRIFT</span>
                 <div class="scroll-mouse">
                     <div class="scroll-wheel"></div>
                 </div>
@@ -82,19 +110,24 @@
         <!-- SECTION 2: THE MANIFESTO -->
         <section id="manifesto" class="manifesto-section">
             <div class="manifesto-container">
-                <div class="section-meta">
-                    <span class="section-num">01 /</span>
-                    <h2 class="section-label">OUR PHILOSOPHY</h2>
-                </div>
-                <div class="manifesto-text-block">
-                    <p class="reveal-text" id="reveal-manifesto">
-                        In a digital world of static grids and predictable templates, we inject physical mass. 
-                        We believe that web interfaces should possess weight, motion should create immediate meaning, 
-                        and user experiences should flow like liquid. 
-                        Our designs do not just sit on a screen — they build velocity. 
-                        We craft custom frontends where interaction is an art, code is invisible engineering, 
-                        and brand identity achieves unstoppable momentum.
-                    </p>
+                <div class="manifesto-grid">
+                    <div class="manifesto-left">
+                        <div class="section-meta">
+                            <span class="section-num">01 /</span>
+                            <h2 class="section-label">OUR PHILOSOPHY</h2>
+                        </div>
+                        <h3 class="manifesto-title">WE INJECT PHYSICAL MASS INTO THE DIGITAL VOID.</h3>
+                    </div>
+                    <div class="manifesto-right">
+                        <p class="reveal-text" id="reveal-manifesto">
+                            In a digital world of static grids and predictable templates, we inject physical mass. 
+                            We believe that web interfaces should possess weight, motion should create immediate meaning, 
+                            and user experiences should flow like liquid. 
+                            Our designs do not just sit on a screen — they build velocity. 
+                            We craft custom frontends where interaction is an art, code is invisible engineering, 
+                            and brand identity achieves unstoppable momentum.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -118,13 +151,17 @@
                         <div class="card-accent-bar"></div>
                         <div class="card-bg-glow"></div>
                         <div class="card-content">
-                            <div class="card-num">01</div>
+                            <div class="card-num-header">
+                                <span class="card-num">01</span>
+                                <span class="card-tag">UI/UX PRINCIPLES</span>
+                            </div>
                             <h4 class="card-title">INTERACTIVE DESIGN</h4>
                             <p class="card-text">
                                 We design immersive, high-end interfaces that respond immediately to user gestures, mapping physical dynamics onto classic layout theory to guide attention.
                             </p>
+                            <div class="card-specs">Motion Archetypes / Gesture Mapping / Physics Scroll</div>
                             <div class="card-link">
-                                <span>UI/UX Philosophy</span>
+                                <span>Design Principles</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                             </div>
                         </div>
@@ -135,11 +172,15 @@
                         <div class="card-accent-bar"></div>
                         <div class="card-bg-glow"></div>
                         <div class="card-content">
-                            <div class="card-num">02</div>
+                            <div class="card-num-header">
+                                <span class="card-num">02</span>
+                                <span class="card-tag">DEVELOPMENT</span>
+                            </div>
                             <h4 class="card-title">CREATIVE ENGINEERING</h4>
                             <p class="card-text">
                                 We build bespoke frontend software. Using WebGL, custom Canvas physics solvers, and high-FPS animations, we turn standard code into kinetic digital art.
                             </p>
+                            <div class="card-specs">WebGL & Canvas2D / Custom Solvers / Fluid Dynamics</div>
                             <div class="card-link">
                                 <span>Technical Stack</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
@@ -152,11 +193,15 @@
                         <div class="card-accent-bar"></div>
                         <div class="card-bg-glow"></div>
                         <div class="card-content">
-                            <div class="card-num">03</div>
+                            <div class="card-num-header">
+                                <span class="card-num">03</span>
+                                <span class="card-tag">BRAND STRATEGY</span>
+                            </div>
                             <h4 class="card-title">BRAND ACCELERATION</h4>
                             <p class="card-text">
                                 We partner with tech innovators to translate complex products into compelling, high-contrast digital campaigns that generate market momentum and scale.
                             </p>
+                            <div class="card-specs">Design Systems / Identity / High-Conversion Engineering</div>
                             <div class="card-link">
                                 <span>Case Studies</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
@@ -382,28 +427,43 @@
         <div class="footer-container">
             <div class="footer-left">
                 <div class="footer-logo">MOMENTUM</div>
-                <p class="footer-tagline">A design and creative engineering agency crafting kinetic digital experiences.</p>
+                <p class="footer-tagline">Crafting digital physics, dynamic frontends, and bespoke brand kinetic solutions for world-class innovators.</p>
+                <div class="footer-status-pill">
+                    <span class="status-dot animate-pulse"></span>
+                    <span>STUDIO ONLINE</span>
+                </div>
             </div>
             <div class="footer-right">
                 <div class="footer-links-group">
                     <span class="footer-lbl">NAVIGATION</span>
-                    <a href="#hero">Agency Profile</a>
+                    <a href="#hero">Profile</a>
                     <a href="#manifesto">Manifesto</a>
                     <a href="#capabilities">Capabilities</a>
                     <a href="#works">Selected Works</a>
                     <a href="#sandbox">Kinetics Engine</a>
-                    <a href="#contact">Contact Studio</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-links-group">
-                    <span class="footer-lbl">AGENCY SPECS</span>
-                    <span class="footer-spec">ENGINE: WebGL/Canvas2D v1.4</span>
-                    <span class="footer-spec">LOCATION: Global / Remote</span>
-                    <span class="footer-spec">CODE: 100% Vanilla JS / CSS</span>
+                    <span class="footer-lbl">SYSTEM STATUS</span>
+                    <span class="footer-spec">FPS ENGINE: WebGL v1.4</span>
+                    <span class="footer-spec">LOCATION: Geneva / Remote</span>
+                    <span class="footer-spec">LOCAL TIME: <span id="live-clock">15:43:00 MST</span></span>
+                    <span class="footer-spec">&copy; 2026 MOMENTUM Studio.</span>
+                </div>
+                <div class="footer-links-group footer-newsletter">
+                    <span class="footer-lbl">NEWSLETTER</span>
+                    <p class="newsletter-text">Stay updated on our kinetic releases and experimental design projects.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" placeholder="email address" class="newsletter-input" required aria-label="Email Address">
+                        <button type="submit" class="newsletter-submit" aria-label="Subscribe">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 MOMENTUM Studio. All physical vectors reserved.</p>
+            <p>All physical vectors, momentum code, and kinetic simulations are dynamically generated in real-time.</p>
             <button id="btn-back-to-top" class="btn-top">
                 <span>BACK TO APOGEE</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>

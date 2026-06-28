@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     initTiltCards();
     initGeneralScroll();
+    initLiveClock();
 });
 
 /* ==========================================================================
@@ -897,3 +898,32 @@ function initGeneralScroll() {
         });
     }
 }
+
+/* ==========================================================================
+   8. DYNAMIC FOOTER TIMEZONE CLOCK
+   ========================================================================== */
+function initLiveClock() {
+    const clockEl = document.getElementById('live-clock');
+    if (!clockEl) return;
+    
+    function updateClock() {
+        const now = new Date();
+        try {
+            const options = {
+                timeZone: 'Europe/Zurich', // Swiss timezone
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+            const timeStr = new Intl.DateTimeFormat('en-GB', options).format(now);
+            clockEl.textContent = `${timeStr} CET`;
+        } catch (e) {
+            clockEl.textContent = now.toLocaleTimeString();
+        }
+    }
+    
+    updateClock();
+    setInterval(updateClock, 1000);
+}
+
